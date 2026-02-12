@@ -11,9 +11,9 @@ export class BookService {
 
   addBook(book: Book): Observable<Book> {
     // Simulate a successful API call
-    //return of(book);
+    return of(book);
     
     // To simulate an error, uncomment the following line:
-    return throwError(() => new Error('Failed to add book'));
+    // return throwError(() => new Error('Failed to add book'));
   }
 }
